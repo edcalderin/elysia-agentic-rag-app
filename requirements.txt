@@ -1,0 +1,5 @@
+elysia-ai==0.2.6
+ipykernel==6.30.1
+pandas==2.3.2
+python-dotenv==1.1.1
+weaviate-client==4.16.10
