@@ -6,7 +6,7 @@ import pandas as pd
 from pathlib import Path
 import sys
 
-FILE_NAME = "sample_data.csv"
+FILE_NAME = "Combined Data.csv"
 
 class WeaviateDataLoader:
     def __init__(self):
@@ -41,30 +41,8 @@ class WeaviateDataLoader:
             for record in self.data_dict:
                 batch.add_object(
                     {
-                        # "id": d["id"],
-                        "title": record["title"],
-                        "vote_average": record["vote_average"],
-                        "vote_count": record["vote_count"],
+                        "statement": record["statement"],
                         "status": record["status"],
-                        "release_date": record["release_date"],
-                        "revenue": record["revenue"],
-                        "runtime": record["runtime"],
-                        "adult": record["adult"],
-                        "backdrop_path": record["backdrop_path"],
-                        "budget": record["budget"],
-                        "homepage": record["homepage"],
-                        "imdb_id": record["imdb_id"],
-                        "original_language": record["original_language"],
-                        "original_title": record["original_title"],
-                        "overview": record["overview"],
-                        "popularity": record["popularity"],
-                        "poster_path": record["poster_path"],
-                        "tagline": record["tagline"],
-                        "genres": record["genres"],
-                        "production_companies": record["production_companies"],
-                        "production_countries": record["production_countries"],
-                        "spoken_languages": record["spoken_languages"],
-                        "keywords": record["keywords"],
                     }
                 )
                 if batch.number_errors > 10:

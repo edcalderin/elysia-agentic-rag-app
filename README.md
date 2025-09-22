@@ -58,6 +58,12 @@ Ensure you have the following installed:
    ```bash
    python load_data.py
    ```
+   ```
+   # Expected output
+   
+   ✅ Connection established
+    Data size: 35741.78 mb
+   ```
 
    **Note:** Verify the connection and data import through the console output.
 
