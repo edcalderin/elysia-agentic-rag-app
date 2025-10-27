@@ -1,0 +1,2 @@
+elysia-ai==0.2.7
+python-dotenv==1.1.1
